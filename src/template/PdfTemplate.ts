@@ -7,32 +7,24 @@ const PdfTemplate = (data: string): string => {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Twoje CV</title>
-    <style>
-    :root {
-        --width: 100vw;
-        --height: 100vh;
-        --size: 1vw;
-        --primary-color: #f3f3f3;
-        --secondary-color: #2d2d2d;
-      }
-      
+    <style>     
       .previewColumns {
         display: flex;
         flex-direction: row;
-        width: var(--width);
-        height: calc(var(--height) - 5vh);
+        width: 100vw;
+        height: 100vh;
       }
       
       .firstColumn {
         display: flex;
         flex-direction: column;
         flex: 1;
-        background-color: var(--secondary-color);
+        background-color: #2d2d2d;
       }
       
       .secondColumn {
         flex: 2;
-        background-color: var(--primary-color);
+        background-color: #f3f3f3;
       }
       
       .section {
@@ -49,7 +41,7 @@ const PdfTemplate = (data: string): string => {
       }
       
       .section--nophoto {
-        padding: var(--size);
+        padding: 1vw;
       }
       
       .section__list-firstcolumn {
@@ -65,7 +57,7 @@ const PdfTemplate = (data: string): string => {
         width: 11vw;
         height: 11vw;
         object-fit: cover;
-        border: 2px solid var(--primary-color);
+        border: 2px solid #f3f3f3;
       }
       
       .section__photo--volume {
@@ -80,17 +72,17 @@ const PdfTemplate = (data: string): string => {
       }
       
       .section__label--firstcolumn {
-        color: var(--primary-color);
+        color: #f3f3f3;
         font-family: "Poppins-Light", sans-serif;
-        border-top: 2px solid var(--primary-color);
-        border-bottom: 2px solid var(--primary-color);
+        border-top: 2px solid #f3f3f3;
+        border-bottom: 2px solid #f3f3f3;
       }
       
       .section__label--secondcolumn {
-        color: var(--secondary-color);
+        color: #2d2d2d;
         font-family: "Poppins-Medium", sans-serif;
-        border-top: 2px solid var(--secondary-color);
-        border-bottom: 2px solid var(--secondary-color);
+        border-top: 2px solid #2d2d2d;
+        border-bottom: 2px solid #2d2d2d;
       }
       
       .section__label--name {
@@ -118,15 +110,15 @@ const PdfTemplate = (data: string): string => {
       }
       
       .github__icon {
-        width: var(--size);
-        height: var(--size);
+        width: 1vw;
+        height: 1vw;
         margin-right: 0.3vw;
       }
       
       .github__icon-ico {
         display: block;
         font-size: 0.9vw;
-        color: var(--secondary-color);
+        color: #2d2d2d;
       }
       
       .github__url {
@@ -134,7 +126,7 @@ const PdfTemplate = (data: string): string => {
         font-family: "Poppins-Light", sans-serif;
         color: #2d2d2d;
         white-space: nowrap;
-        border-bottom: 1px solid var(--secondary-color);
+        border-bottom: 1px solid #2d2d2d;
       }
       
       .section--rodo {
@@ -149,13 +141,15 @@ const PdfTemplate = (data: string): string => {
         color: #2d2d2d;
         word-wrap: break-word;
         white-space: pre-wrap;
-        border-top: 1px solid var(--secondary-color);
-        border-bottom: 1px solid var(--secondary-color);
+        border-top: 1px solid #2d2d2d;
+        border-bottom: 1px solid #2d2d2d;
       }
     </style>
 </head>
 <body>
+    <div class="previewColumns">
     ${data}
+    </div>
 </body>
 </html>
     `;
