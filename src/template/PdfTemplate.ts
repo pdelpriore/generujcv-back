@@ -6,6 +6,8 @@ const PdfTemplate = (data: string): string => {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>Twoje CV</title>
     <style>     
     :root {
@@ -87,14 +89,16 @@ const PdfTemplate = (data: string): string => {
     
     .section__label--firstcolumn {
       color: var(--primary-color);
-      font-family: "Poppins-Light", sans-serif;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
       border-top: 2px solid var(--primary-color);
       border-bottom: 2px solid var(--primary-color);
     }
     
     .section__label--secondcolumn {
       color: var(--secondary-color);
-      font-family: "Poppins-Medium", sans-serif;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
       border-top: 2px solid var(--secondary-color);
       border-bottom: 2px solid var(--secondary-color);
     }
@@ -102,7 +106,8 @@ const PdfTemplate = (data: string): string => {
     .section__label--name {
       text-align: left;
       font-size: 1.5vw;
-      font-family: "Poppins-Medium", sans-serif;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
       padding-left: 3vw;
       border-top: none;
       border-bottom: none;
@@ -110,7 +115,8 @@ const PdfTemplate = (data: string): string => {
     
     .section__label--jobposition {
       font-size: 0.8vw;
-      font-family: "Poppins-Regular", sans-serif;
+      font-family: "Poppins", sans-serif;
+      font-weight: 400;
     }
     
     .github {
@@ -137,7 +143,8 @@ const PdfTemplate = (data: string): string => {
     
     .github__url {
       font-size: 0.8vw;
-      font-family: "Poppins-Light", sans-serif;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
       color: #2d2d2d;
       white-space: nowrap;
       border-bottom: 1px solid var(--secondary-color);
@@ -151,7 +158,8 @@ const PdfTemplate = (data: string): string => {
     
     .section__rodo {
       font-size: 0.6vw;
-      font-family: "Poppins-Light", sans-serif;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
       color: #2d2d2d;
       word-wrap: break-word;
       white-space: pre-wrap;
@@ -181,7 +189,8 @@ const PdfTemplate = (data: string): string => {
     .contact__content {
       font-size: 0.8vw;
       color: var(--primary-color);
-      font-family: "Poppins-ExtraLight", sans-serif;
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
       white-space: nowrap;
     }
     
@@ -196,13 +205,15 @@ const PdfTemplate = (data: string): string => {
     
     .diploma__content {
       font-size: 0.8vw;
-      font-family: "Poppins-Light", sans-serif;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
       color: #2d2d2d;
       white-space: nowrap;
     }
     
     .diploma__content--degree {
-      font-family: "Poppins-Medium", sans-serif;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
     }
     
     .diploma__content--description {
@@ -223,13 +234,15 @@ const PdfTemplate = (data: string): string => {
     
     .experience__content {
       font-size: 0.8vw;
-      font-family: "Poppins-Light", sans-serif;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
       color: #2d2d2d;
       white-space: nowrap;
     }
     
     .experience__content--jobposition {
-      font-family: "Poppins-Medium", sans-serif;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
     }
     
     .experience__content--description {
@@ -264,7 +277,8 @@ const PdfTemplate = (data: string): string => {
     .generic__content {
       font-size: 0.8vw;
       color: var(--primary-color);
-      font-family: "Poppins-ExtraLight", sans-serif;
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
       white-space: nowrap;
     }
     
@@ -305,13 +319,15 @@ const PdfTemplate = (data: string): string => {
     
     .project__content {
       font-size: 0.8vw;
-      font-family: "Poppins-Light", sans-serif;
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
       color: #2d2d2d;
       white-space: nowrap;
     }
     
     .project__content--name {
-      font-family: "Poppins-Medium", sans-serif;
+      font-family: "Poppins", sans-serif;
+      font-weight: 500;
     }
     
     .project__content--description {
