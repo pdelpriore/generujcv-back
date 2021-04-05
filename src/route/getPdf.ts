@@ -4,13 +4,14 @@ import fs from "fs";
 
 const getPdf = (app: Application) => {
   app.get("/getpdf", (req: Request, res: Response) => {
-    res.sendFile(path.join(__dirname, "..", "file", "result.pdf"), (err) => {
-      if (err) {
-        return Promise.reject();
-      }
-      fs.unlinkSync(path.join(__dirname, "..", "file", "result.pdf"));
-      return Promise.resolve();
-    });
+    res
+      .sendStatus(200)
+      .sendFile(path.join(__dirname, "..", "file", "result.pdf"), (err) => {
+        if (err) {
+          res.sendStatus(400);
+        }
+        fs.unlinkSync(path.join(__dirname, "..", "file", "result.pdf"));
+      });
   });
 };
 
