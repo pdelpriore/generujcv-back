@@ -1,6 +1,6 @@
 import { Application, Request, Response } from "express";
-import path from "path";
 import PdfTemplate from "../template/PdfTemplate";
+import path from "path";
 import puppeteer from "puppeteer";
 
 const createPdf = (app: Application) => {
