@@ -27,7 +27,7 @@ const createPdf = (app: Application) => {
         next();
       } catch (err) {
         if (err) {
-          res.sendStatus(500);
+          next(err);
         }
       }
     }
