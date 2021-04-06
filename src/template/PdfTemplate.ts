@@ -55,7 +55,6 @@ const PdfTemplate = (data: string): string => {
     
     .section {
       display: flex;
-      flex: 1;
       flex-direction: column;
       align-items: baseline;
       padding: 0.5vw;
