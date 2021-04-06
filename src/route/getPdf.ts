@@ -4,7 +4,7 @@ import path from "path";
 import fs from "fs";
 
 const getPdf = (app: Application) => {
-  app.get(
+  app.post(
     "/getpdf",
     createPdf,
     (req: Request, res: Response, next: NextFunction) => {
