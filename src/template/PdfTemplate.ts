@@ -73,6 +73,7 @@ const PdfTemplate = (data: string): string => {
       width: 11vw;
       height: 11vw;
       object-fit: cover;
+      border-radius: 50%;
       border: 2px solid var(--primary-color);
     }
     
