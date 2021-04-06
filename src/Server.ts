@@ -1,6 +1,5 @@
 import express, { Application } from "express";
 import cors from "cors";
-import createPdf from "./route/createPdf";
 import getPdf from "./route/getPdf";
 
 const port = process.env.PORT || 4000;
@@ -15,7 +14,6 @@ app.use(
   })
 );
 
-createPdf(app);
 getPdf(app);
 
 app.listen(port, () => console.log(`Server is running on ${port}`));
