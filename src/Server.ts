@@ -1,6 +1,7 @@
-import express, { Application, Request, Response, NextFunction } from "express";
+import express, { Application } from "express";
 import cors from "cors";
 import getPdf from "./route/getPdf";
+import handleError from "./middleware/handleError";
 
 const port = process.env.PORT || 4000;
 const app: Application = express();
@@ -16,8 +17,6 @@ app.use(
 
 getPdf(app);
 
-app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
-  if (err) res.sendStatus(500).send("Something went wrong. Try again later.");
-});
+app.use(handleError);
 
 app.listen(port, () => console.log(`Server is running on ${port}`));
