@@ -9,14 +9,15 @@ const getPdf = (app: Application) => {
     createPdf,
     (req: Request, res: Response, next: NextFunction) => {
       const { title } = req.body;
-      res
-        .sendStatus(200)
-        .sendFile(path.join(__dirname, "..", "file", `${title}.pdf`), (err) => {
+      res.sendFile(
+        path.join(__dirname, "..", "file", `${title}.pdf`),
+        (err) => {
           if (err) {
             next(err);
           }
           fs.unlinkSync(path.join(__dirname, "..", "file", `${title}.pdf`));
-        });
+        }
+      );
     }
   );
 };
