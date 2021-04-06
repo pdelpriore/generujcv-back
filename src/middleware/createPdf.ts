@@ -1,4 +1,4 @@
-import { Application, Request, Response, NextFunction } from "express";
+import { Request, Response, NextFunction } from "express";
 import PdfTemplate from "../template/PdfTemplate";
 import path from "path";
 import puppeteer from "puppeteer";
