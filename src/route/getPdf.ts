@@ -15,7 +15,12 @@ const getPdf = (app: Application) => {
           if (err) {
             next(err);
           }
-          fs.unlinkSync(path.join(__dirname, "..", "file", `${title}.pdf`));
+          fs.unlink(
+            path.join(__dirname, "..", "file", `${title}.pdf`),
+            (err) => {
+              if (err) next(err);
+            }
+          );
         }
       );
     }
