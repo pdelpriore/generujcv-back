@@ -39,8 +39,18 @@ const PdfTemplate = (data: string): string => {
     }
     
     .secondColumn {
+      display: flex;
+      flex-direction: column;
       flex: 2;
       background-color: var(--primary-color);
+    }
+    
+    .secondColumn__firstsection {
+      flex: 23;
+    }
+    
+    .secondColumn__secondsection {
+      flex: 1;
     }
     
     .section {
