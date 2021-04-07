@@ -1,4 +1,5 @@
-import express, { Application } from "express";
+import express, { Application, Request, Response, NextFunction } from "express";
+import path from "path";
 import cors from "cors";
 import getPdf from "./route/getPdf";
 import handleError from "./middleware/handleError";
@@ -14,6 +15,13 @@ app.use(
     extended: true,
   })
 );
+
+app.use(express.static(path.join(__dirname, "build")));
+app.get("*", (req: Request, res: Response, next: NextFunction) => {
+  req.url.includes("/getpdf")
+    ? next()
+    : res.sendFile(path.join(__dirname, "build", "index.html"));
+});
 
 getPdf(app);
 
