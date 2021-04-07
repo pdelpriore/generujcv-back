@@ -46,7 +46,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .secondColumn__firstsection {
-      flex: 23;
+      flex-grow: 8;
     }
     
     .secondColumn__secondsection {
