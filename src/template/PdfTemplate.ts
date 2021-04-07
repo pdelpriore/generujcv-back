@@ -52,7 +52,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .secondColumn__firstsection {
-      flex-grow: 20;
+      flex: 20;
     }
     
     .secondColumn__secondsection {
@@ -85,20 +85,20 @@ const PdfTemplate = (data: string): string => {
     }
     
     .section__photo {
-      width: 11vw;
-      height: 11vw;
+      width: 150px;
+      height: 150px;
       object-fit: cover;
       border-radius: 50%;
       border: 2px solid var(--primary-color);
     }
     
     .section__photo--volume {
-      width: 9vw;
-      height: 9vw;
+      width: 140px;
+      height: 140px;
     }
     
     .section__label {
-      font-size: 0.8vw;
+      font-size: 1.2vw;
       align-self: stretch;
       text-align: center;
     }
@@ -107,21 +107,21 @@ const PdfTemplate = (data: string): string => {
       color: var(--primary-color);
       font-family: "Poppins", sans-serif;
       font-weight: 300;
-      border-top: 2px solid var(--primary-color);
-      border-bottom: 2px solid var(--primary-color);
+      border-top: 1px solid var(--primary-color);
+      border-bottom: 1px solid var(--primary-color);
     }
     
     .section__label--secondcolumn {
       color: var(--secondary-color);
       font-family: "Poppins", sans-serif;
       font-weight: 500;
-      border-top: 2px solid var(--secondary-color);
-      border-bottom: 2px solid var(--secondary-color);
+      border-top: 1px solid var(--secondary-color);
+      border-bottom: 1px solid var(--secondary-color);
     }
     
     .section__label--name {
       text-align: left;
-      font-size: 1.5vw;
+      font-size: 2.2vw;
       font-family: "Poppins", sans-serif;
       font-weight: 500;
       padding-left: 3vw;
@@ -130,7 +130,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .section__label--jobposition {
-      font-size: 0.8vw;
+      font-size: 1.4vw;
       font-family: "Poppins", sans-serif;
       font-weight: 400;
     }
@@ -158,7 +158,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .github__url {
-      font-size: 0.8vw;
+      font-size: 1vw;
       font-family: "Poppins", sans-serif;
       font-weight: 300;
       color: #2d2d2d;
@@ -173,7 +173,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .section__rodo {
-      font-size: 0.6vw;
+      font-size: 1vw;
       font-family: "Poppins", sans-serif;
       font-weight: 300;
       color: #2d2d2d;
@@ -191,19 +191,19 @@ const PdfTemplate = (data: string): string => {
     }
     
     .contact__icon {
-      width: 1vw;
-      height: 1vw;
+      width: 1.2vw;
+      height: 1.2vw;
       margin-right: 0.3vw;
     }
     
     .contact__icon-ico {
       display: block;
-      font-size: 0.9vw;
+      font-size: 1.1vw;
       color: var(--primary-color);
     }
     
     .contact__content {
-      font-size: 0.8vw;
+      font-size: 1vw;
       color: var(--primary-color);
       font-family: "Poppins", sans-serif;
       font-weight: 200;
@@ -220,7 +220,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .diploma__content {
-      font-size: 0.8vw;
+      font-size: 1vw;
       font-family: "Poppins", sans-serif;
       font-weight: 300;
       color: #2d2d2d;
@@ -233,7 +233,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .diploma__content--description {
-      font-size: 0.7vw;
+      font-size: 0.9vw;
       text-align: justify;
       word-wrap: break-word;
       white-space: normal;
@@ -249,7 +249,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .experience__content {
-      font-size: 0.8vw;
+      font-size: 1vw;
       font-family: "Poppins", sans-serif;
       font-weight: 300;
       color: #2d2d2d;
@@ -262,7 +262,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .experience__content--description {
-      font-size: 0.7vw;
+      font-size: 0.9vw;
       text-align: justify;
       word-wrap: break-word;
       white-space: normal;
@@ -278,20 +278,20 @@ const PdfTemplate = (data: string): string => {
     .generic__icon {
       display: flex;
       align-items: center;
-      width: 0.9vw;
-      height: 0.9vw;
+      width: 1vw;
+      height: 1vw;
       margin-right: 0.3vw;
     }
     
     .generic__icon-ico {
-      width: 0.4vw;
-      height: 0.4vw;
+      width: 0.6vw;
+      height: 0.6vw;
       border-radius: 50%;
       background-color: var(--primary-color);
     }
     
     .generic__content {
-      font-size: 0.8vw;
+      font-size: 1vw;
       color: var(--primary-color);
       font-family: "Poppins", sans-serif;
       font-weight: 200;
@@ -313,15 +313,15 @@ const PdfTemplate = (data: string): string => {
     .language__shape-progress {
       fill: none;
       stroke: #f3f3f3;
-      stroke-width: 3;
+      stroke-width: 2;
       transform: rotate(-90deg);
       transform-origin: center;
     }
     
     .language__flag {
       position: absolute;
-      width: 1.2vw;
-      height: 1.2vw;
+      width: 2vw;
+      height: 2vw;
     }
     
     .project {
@@ -334,7 +334,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .project__content {
-      font-size: 0.8vw;
+      font-size: 1vw;
       font-family: "Poppins", sans-serif;
       font-weight: 300;
       color: #2d2d2d;
@@ -347,7 +347,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .project__content--description {
-      font-size: 0.8vw;
+      font-size: 0.9vw;
       text-align: justify;
       word-wrap: break-word;
       white-space: pre-wrap;

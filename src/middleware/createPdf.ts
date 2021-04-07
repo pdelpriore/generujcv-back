@@ -11,7 +11,7 @@ const createPdf = async (req: Request, res: Response, next: NextFunction) => {
 
     const page = await browser.newPage();
     await page.setContent(PdfTemplate(data));
-    await page.emulateMediaType("print");
+    await page.emulateMediaType("screen");
     await page.pdf({
       path: path.join(__dirname, "..", "file", `${title}.pdf`),
       format: "a4",
