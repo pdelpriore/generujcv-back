@@ -16,11 +16,11 @@ app.use(
   })
 );
 
-app.use(express.static(path.join(__dirname, "..", "src", "build")));
+app.use(express.static(path.join(__dirname, "build")));
 app.get("*", (req: Request, res: Response, next: NextFunction) => {
   req.url.includes("/getpdf")
     ? next()
-    : res.sendFile(path.join(__dirname, "..", "src", "build"));
+    : res.sendFile(path.join(__dirname, "build"));
 });
 
 getPdf(app);
