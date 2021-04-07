@@ -98,7 +98,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .section__label {
-      font-size: 1.2vw;
+      font-size: 1.3vw;
       align-self: stretch;
       text-align: center;
     }
@@ -121,7 +121,7 @@ const PdfTemplate = (data: string): string => {
     
     .section__label--name {
       text-align: left;
-      font-size: 2.2vw;
+      font-size: 2.5vw;
       font-family: "Poppins", sans-serif;
       font-weight: 500;
       padding-left: 3vw;
@@ -130,7 +130,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .section__label--jobposition {
-      font-size: 1.4vw;
+      font-size: 1.5vw;
       font-family: "Poppins", sans-serif;
       font-weight: 400;
     }
@@ -158,7 +158,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .github__url {
-      font-size: 1vw;
+      font-size: var(--size);
       font-family: "Poppins", sans-serif;
       font-weight: 300;
       color: #2d2d2d;
@@ -173,7 +173,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .section__rodo {
-      font-size: 1vw;
+      font-size: 1.1vw;
       font-family: "Poppins", sans-serif;
       font-weight: 300;
       color: #2d2d2d;
@@ -203,7 +203,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .contact__content {
-      font-size: 1vw;
+      font-size: 1.1vw;
       color: var(--primary-color);
       font-family: "Poppins", sans-serif;
       font-weight: 200;
@@ -220,7 +220,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .diploma__content {
-      font-size: 1vw;
+      font-size: 1.1vw;
       font-family: "Poppins", sans-serif;
       font-weight: 300;
       color: #2d2d2d;
@@ -233,7 +233,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .diploma__content--description {
-      font-size: 0.9vw;
+      font-size: var(--size);
       text-align: justify;
       word-wrap: break-word;
       white-space: normal;
@@ -249,7 +249,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .experience__content {
-      font-size: 1vw;
+      font-size: 1.1vw;
       font-family: "Poppins", sans-serif;
       font-weight: 300;
       color: #2d2d2d;
@@ -262,7 +262,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .experience__content--description {
-      font-size: 0.9vw;
+      font-size: var(--size);
       text-align: justify;
       word-wrap: break-word;
       white-space: normal;
@@ -291,7 +291,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .generic__content {
-      font-size: 1vw;
+      font-size: 1.1vw;
       color: var(--primary-color);
       font-family: "Poppins", sans-serif;
       font-weight: 200;
@@ -334,7 +334,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .project__content {
-      font-size: 1vw;
+      font-size: 1.1vw;
       font-family: "Poppins", sans-serif;
       font-weight: 300;
       color: #2d2d2d;
@@ -347,7 +347,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .project__content--description {
-      font-size: 0.9vw;
+      font-size: var(--size);
       text-align: justify;
       word-wrap: break-word;
       white-space: pre-wrap;
