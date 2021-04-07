@@ -7,7 +7,7 @@ import handleError from "./middleware/handleError";
 const port = process.env.PORT || 4000;
 const app: Application = express();
 
-app.use(cors());
+app.use(cors({ origin: "http://generujcv.herokuapp.com" }));
 
 app.use(express.json());
 app.use(
