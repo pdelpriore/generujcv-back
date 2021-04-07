@@ -1,11 +1,16 @@
 import { Request, Response, NextFunction } from "express";
-import PdfTemplate from "../template/PdfTemplate";
+import fs from "fs";
 import path from "path";
+import PdfTemplate from "../template/PdfTemplate";
 import puppeteer from "puppeteer";
 
 const createPdf = async (req: Request, res: Response, next: NextFunction) => {
   try {
     const { data, title } = req.body;
+
+    if (!fs.existsSync(path.join(__dirname, "..", "file"))) {
+      fs.mkdirSync(path.join(__dirname, "..", "file"));
+    }
 
     const browser = await puppeteer.launch({ headless: true });
 
