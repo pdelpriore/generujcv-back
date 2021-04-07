@@ -12,11 +12,14 @@ const createPdf = async (req: Request, res: Response, next: NextFunction) => {
       fs.mkdirSync(path.join(__dirname, "..", "file"));
     }
 
-    const browser = await puppeteer.launch({ headless: true });
+    const browser = await puppeteer.launch({
+      headless: true,
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
 
     const page = await browser.newPage();
     await page.setContent(PdfTemplate(data));
-    await page.emulateMediaType("print");
+    await page.emulateMediaType("screen");
     await page.pdf({
       path: path.join(__dirname, "..", "file", `${title}.pdf`),
       format: "a4",
