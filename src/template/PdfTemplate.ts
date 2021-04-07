@@ -52,7 +52,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .secondColumn__firstsection {
-      flex-grow: 10;
+      flex-grow: 20;
     }
     
     .secondColumn__secondsection {
