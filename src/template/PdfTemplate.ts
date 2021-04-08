@@ -63,7 +63,7 @@ const PdfTemplate = (data: string): string => {
       display: flex;
       flex-direction: column;
       align-items: baseline;
-      padding: 0.5vw;
+      padding: 1.2vw;
     }
     
     .section--photo {
@@ -72,7 +72,7 @@ const PdfTemplate = (data: string): string => {
     }
     
     .section--nophoto {
-      padding: var(--size);
+      padding: 1.5vw;
     }
     
     .section__list-firstcolumn {
