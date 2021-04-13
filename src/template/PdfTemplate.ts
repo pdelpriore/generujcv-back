@@ -193,7 +193,7 @@ const PdfTemplate = (data: string): string => {
     .contact__icon {
       width: 1.2vw;
       height: 1.2vw;
-      margin-right: 0.3vw;
+      margin-right: 0.7vw;
     }
     
     .contact__icon-ico {
